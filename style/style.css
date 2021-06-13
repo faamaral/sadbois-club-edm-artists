@@ -20,3 +20,33 @@
     padding-top: 50px;
 }
 
+.bg-wine {
+    background-color: #800652 ;
+}
+
+.text-wine {
+    color: #800652;
+}
+
+.btn-wine {
+    color: #fff;
+    background-color: #800652;
+    border-color: #313F52;
+  }
+  
+  .btn-wine:hover {
+    color: #fff;
+    background-color: #800652;
+    border-color: #313F52;
+  }
+  
+  .btn-wine:focus, .btn-wine.focus {
+    color: #fff;
+    background-color: #800652;
+    border-color: #313F52;
+    box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+  }
+
+  .border-wine {
+      border-color: #800652;
+  }
