@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #121212;
+}
+/*.navbar a {
+    color: #ffffff;
+}*/
+.link-menu {
+    color: #ffffff;
+}
+
+.carrocel img{
+    max-height: 500px;
+}
+
+.card-css img {
+    max-height: 250px;
+}
+
+.container {
+    padding-top: 50px;
+}
+
