@@ -24,17 +24,20 @@ crossorigin="anonymous">
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
       <a href="index.html" class="navbar-brand">SADBOIS Artists</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#" >Illenium</a>
+              <a class="nav-link" href="index.html#illenium" >Illenium</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >Said The Sky</a>
+              <a class="nav-link" href="index.html#saidthesky" >Said The Sky</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >Dabin</a>
+              <a class="nav-link" href="index.html#dabin" >Dabin</a>
             </li>
           </ul>
       </div>
@@ -49,7 +52,7 @@ crossorigin="anonymous">
     
                         <!--Form with header-->
     
-                        <form action="index.html" method="post">
+                        <form method="get">
                             <div class="card border-wine rounded-0">
                                 <div class="card-header p-0">
                                     <div class="bg-wine text-white text-center py-2">
@@ -87,7 +90,8 @@ crossorigin="anonymous">
                                     </div>
     
                                     <div class="text-center">
-                                        <input type="submit" value="Enviar" class="btn btn-wine btn-block rounded-0 py-2">
+                                        <input type="submit" value="Enviar" data-toggle="modal" data-target="#modal" class="btn btn-wine btn-block rounded-0 py-2">
+                                        
                                     </div>
                                 </div>
     
@@ -100,11 +104,35 @@ crossorigin="anonymous">
         </div>
     </div>
 
+    <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Mensagem</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Sua mensagem for enviada</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
 <footer class="container">
   <p class="float-right"><a href="#">Voltar ao topo</a></p>
-  <p>&copy; Fabiano Amaral Alves, 2021 &middot; <a href="#">Entre em contato</a> &middot; <a href="#">Termos</a></p>
+  <p>&copy; Fabiano Amaral Alves, 2021 &middot; <a href="#">Entre em contato</a></p>
 </footer>
-
+    <script>
+        $('#modal').on('shown.bs.modal', function () {
+  $('#modal').trigger('focus')
+})
+    </script>
   </main>
 </body>
 </html>
